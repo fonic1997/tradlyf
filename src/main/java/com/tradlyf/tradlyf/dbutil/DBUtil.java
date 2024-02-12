@@ -1,4 +1,4 @@
-package com.tradlyf.dbutil;
+package com.tradlyf.tradlyf.dbutil;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,10 +11,10 @@ public class DBUtil {
         }
         else
         {
-            String driver="com.mysql.jdbc.Driver";
+            String driver="com.mysql.cj.jdbc.Driver";
             String url="jdbc:mysql://localhost:3306/tradlyf";
             String username="root";
-            String password="pchangeme";
+            String password="changeme";
             try {
                 Class.forName(driver);
                 connection = DriverManager.getConnection(url, username, password);
