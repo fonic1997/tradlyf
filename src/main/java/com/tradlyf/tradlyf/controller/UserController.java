@@ -18,4 +18,10 @@ public class UserController {
         return flag;
     }
 
+    @PostMapping("/signup")
+    public users Signup(@RequestBody users user){
+        this.userService.signup(user);
+        return user;
+    }
+
 }

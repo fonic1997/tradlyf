@@ -7,5 +7,6 @@ import org.springframework.stereotype.Repository;
 public interface UserService {
 
     public users loginValidation(String email, String password);
+    public void signup(users user);
 
 }
